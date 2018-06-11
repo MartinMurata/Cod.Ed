@@ -119,9 +119,9 @@ def on_intent(intent_request, session):
     #When adding new intent functions change the names in these 'if' statements
     # Dispatch to your skill's intent handlers
     if intent_name == "MyIntentOne":
-        return MyIntentFunctionOne(intent, session)
+        return MyIntentFunctionOne(intent, session) #CHANGE THIS NAME WHEN ADDING INTENTS
     elif intent_name == "MyIntentTwo":
-        return MyIntentFunctionTwo(intent, session)
+        return MyIntentFunctionTwo(intent, session) #CHANGE THIS NAME WHEN ADDING INTENTS
     elif intent_name == "AMAZON.HelpIntent":
         return get_welcome_response()
     elif intent_name == "AMAZON.CancelIntent" or intent_name == "AMAZON.StopIntent":
