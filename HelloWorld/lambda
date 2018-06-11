@@ -9,9 +9,11 @@ exports.handler = function(event, context, callback) {
 
 var handlers = {
     'LaunchRequest': function () {
-        this.emit('HelloIntent'); //function call 
+        this.response.speak("Welcome to the hello world skill, say hi!").listen();
+        this.emit(':responseReady'); 
     },
-    'HelloWorldIntent': function () {
-        this.emit(':ask', 'Hello World from Alexa!'); 
+    'HelloIntent': function () {
+        this.response.speak("Hello world from alexa!").listen();
+        this.emit(':responseReady'); 
     }
 };
