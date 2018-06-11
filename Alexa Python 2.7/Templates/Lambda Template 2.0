@@ -102,7 +102,7 @@ def handle_session_end_request():
 
 def on_session_started(session_started_request, session):
     """ Called when the session starts """
-    #not sure what needs to go here?
+    #empty function for now
 
 def on_launch(launch_request, session):
     """ Called when the user launches the skill without specifying what they
